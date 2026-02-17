@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Hello Kitty Bug Replacer",
+  "version": "1.0",
+  "description": "Replaces default bug icons with a Hello Kitty icon and adds a pretty heart splash animation on hover!",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["images/hello_kitty.png", "style.css"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "icons": {
+    "48": "images/hello_kitty.png", // Optional: icon for the extension itself
+    "128": "images/hello_kitty.png" // Optional: icon for the extension itself
+  },
+  "action": {
+    "default_title": "Hello Kitty Bug Replacer (click to activate on this page - if not automatic)"
+  }
+}
