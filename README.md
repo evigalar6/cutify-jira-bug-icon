@@ -77,7 +77,3 @@ A Chrome extension that replaces Jira bug icons with a Hello Kitty icon and show
 
 - No build step is required.
 - Edit files directly, then reload the extension in `chrome://extensions`.
-
-## License
-
-No license file is currently included. Add one if you plan to distribute or share this project.
